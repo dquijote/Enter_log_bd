@@ -145,7 +145,7 @@ def enterDomainBlackList(path_black_list, category):
         # size_transf = line_split[9]
         c1.execute('''PRAGMA synchronous = OFF''')
         c1.execute(
-            "insert into analysis_squid_kerio_blacklistdomain(fecha_entrada,domain,category) "
+            "insert into analysis_squid_kerio_blacklistdomain(fecha_entrada,domain,category_id) "
             "values (?,?,?)", (
             fecha, str(domain), category))
         # El resultado de "cursor.execute" puede ser iterado por fila
