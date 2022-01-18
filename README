@@ -1,0 +1,2 @@
+python 3.8
+That script take the data from a log Kerio or squid proxy and put in a database sqlite.
